@@ -1,0 +1,31 @@
+<div class="well bs-component">
+    <form class="form-horizontal">
+        <fieldset>
+            <legend>Add a book</legend>
+            <div class="form-group">
+                <label for="newbook-title" class="col-lg-2 control-label">Title</label>
+                <div class="col-lg-10">
+                    <input data-ng-model="newBook.title" type="text" class="form-control" id="newbook-title">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="newbook-author" class="col-lg-2 control-label">Author</label>
+                <div class="col-lg-10">
+                    <input data-ng-model="newBook.author" type="text" class="form-control" id="newbook-author">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="newbook-isbn" class="col-lg-2 control-label">ISBN</label>
+                <div class="col-lg-10">
+                    <input data-ng-model="newBook.isbn" type="text" class="form-control" id="newbook-isbn">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button data-ng-click="addNewBook();" class="btn btn-primary">Add Book</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+</div>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script data-main="js/main" src="js/require.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <title></title>
+    <style type="text/css">
+        .navbar-collapse.collapse {
+            display: block !important;
+        }
+
+        .navbar-nav > li, .navbar-nav {
+            float: left !important;
+        }
+
+        .navbar-nav.navbar-right:last-child {
+            margin-right: 0;
+        }
+
+        .navbar-right {
+            float: right !important;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-static-top" role="navigation" id="topNav">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <a class="navbar-brand">BookSpy</a>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#/" class="navbar-link"><i class="fa fa-home"></i> List</a></li>
+        <li><a href="#/add" class="navbar-link"><i class="fa fa-plus"></i> Add book</a></li>
+    </ul>
+</nav>
+
+
+<div data-ng-view=""></div>
+</body>
+</html>

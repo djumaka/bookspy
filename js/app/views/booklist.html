@@ -1,0 +1,23 @@
+<div>
+    <div class="input-group">
+        <input data-ng-model="filter.title" class="form-control">
+        <span class="input-group-btn"><button data-ng-click="refreshList();" class="btn btn-default">
+            <i class="fa fa-refresh"></i> Refresh
+        </button></span>
+    </div>
+    <br>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Book</th>
+            <th>Author</th>
+        </tr>
+        </thead>
+        <tr data-ng-repeat="book in booksList | filter:filter.title | orderBy:'title':'asc'">
+            <td>{{book.title}}</td>
+            <td>
+                <small><em>by {{book.author}}</em></small>
+            </td>
+        </tr>
+    </table>
+</div>
